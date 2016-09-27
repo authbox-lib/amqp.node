@@ -2,7 +2,7 @@
   "name": "amqplib",
   "homepage": "http://squaremo.github.io/amqp.node/",
   "main": "./channel_api.js",
-  "version": "0.4.1",
+  "version": "0.4.1-smyte.1",
   "description": "An AMQP 0-9-1 (e.g., RabbitMQ) library and client.",
   "repository": {
     "type": "git",
@@ -14,18 +14,19 @@
   "dependencies": {
     "bitsyntax": "~0.0.4",
     "buffer-more-ints": "0.0.2",
-    "readable-stream": "1.x >=1.1.9",
-    "when": "~3.6.2"
+    "readable-stream": "1.x >=1.1.9"
+  },
+  "peerDependencies": {
+    "bluebird": "^3.3.5"
   },
   "devDependencies": {
     "mocha": "~1",
     "claire": "0.4.1",
-    "uglify-js": "2.4.x",
-    "istanbul": "0.1.x"
+    "istanbul": "0.1.x",
+    "uglify-js": "2.4.x"
   },
   "scripts": {
-    "test": "make test",
-    "prepublish": "make"
+    "test": "make test"
   },
   "keywords": [
     "AMQP",
